@@ -1,0 +1,14 @@
+# Core Home-Assistant
+homeassistant:
+  name: Home
+  latitude: !secret zone_home_latitude
+  longitude: !secret zone_home_longitude
+  elevation: !secret zone_home_elevation
+  unit_system: metric
+  time_zone: !secret time_zone
+  #auth_providers:
+  #  - type: trusted_networks
+  #    trusted_networks: !secret http_trusted_networks
+
+# Load packages
+  packages: !include_dir_named components/packages
