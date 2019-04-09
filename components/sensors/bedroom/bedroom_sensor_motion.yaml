@@ -1,0 +1,6 @@
+# Bedroom Sensor Node
+# Motion
+platform: mqtt  
+state_topic: "bedroom/sensornode1"  
+name: "Bedroom Motion"  
+value_template: '{{ value_json.motion }}'

@@ -1,0 +1,16 @@
+---
+# HomeKit auto-start is disabled, with the intent to prevent
+# it from starting when some of my other systems aren't ready yet.
+#
+# This automation waits for a 5 minutes after Home-Assistant starts up
+# and then will start HomeKit.
+#
+# https://www.home-assistant.io/components/homekit/#disable-auto-start
+#
+alias: 'Start HomeKit'
+trigger:
+  - platform: homeassistant
+    event: start
+action:
+  - delay: 00:05  # Waits 5 minutes
+  - service: homekit.start

@@ -1,0 +1,7 @@
+# Shed Sensor Node
+# Humidity
+platform: mqtt  
+state_topic: "shed/sensornode1"  
+name: "Shed Humidity"  
+unit_of_measurement: "%"  
+value_template: '{{ value_json.humidity | round(1) }}'  

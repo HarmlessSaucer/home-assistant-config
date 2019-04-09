@@ -1,0 +1,20 @@
+---
+# Turn on the Livingroom Lamp 45 minutes
+# before sunset if people are home.
+#
+# https://www.home-assistant.io/docs/automation/examples/
+#
+alias: 'Livingroom lamp on in the evening'
+trigger:
+  # 45minutes before sunset
+  - platform: sun
+    event: sunset
+    offset: '-00:45:00'
+#condition:
+  # Only if people are home
+  # - condition: state
+  #   entity_id: group.all_devices
+  #   state: 'home'
+action:
+  service: homeassistant.turn_on
+  entity_id: light.livingroom_lamp

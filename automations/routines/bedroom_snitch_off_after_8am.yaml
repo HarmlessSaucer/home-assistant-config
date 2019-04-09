@@ -1,0 +1,14 @@
+---
+# Turn on the Livingroom Lamp 45 minutes
+# before sunset if people are home.
+#
+# https://www.home-assistant.io/docs/automation/examples/
+#
+alias: 'Turn Bedroom Snitch off at 8am'
+trigger:
+  # 45minutes before sunset
+  - platform: time
+    at: '08:00:00'
+action:
+  service: homeassistant.turn_off
+  entity_id: light.snitch

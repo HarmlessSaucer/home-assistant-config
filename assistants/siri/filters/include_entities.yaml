@@ -1,0 +1,52 @@
+
+---
+# Provides a list of entities to include in HomeKit.
+#
+# https://www.home-assistant.io/components/homekit/#include_entities
+#
+include_entities:
+  ####Lights
+    #Bedroom
+  - light.bedroom_light
+  - light.bedroom_lamp_becky
+  - light.bedroom_lamp_graham
+  - light.snitch
+  
+    #Livingroom
+  - light.livingroom_light
+  - light.livingroom_lamp
+  
+    #Dining Room
+  - light.dining_room_light
+  
+    #Isabellas Room
+  - light.isabella_s_light
+
+
+  ####Sensors
+    #Bedroom
+  - sensor.bedroom_temperature
+  - sensor.bedroom_humidity
+  - sensor.bedroom_motion
+  - sensor.bedroom_light
+  - sensor.bedroom_real_feel
+
+    #Isabellas Room
+  - sensor.isabella_s_room_temperature
+  - sensor.isabella_s_room_humidity
+  - sensor.isabella_s_room_motion
+  - sensor.isabella_s_room_light
+  - sensor.isabella_s_room_real_feel
+
+    #Shed
+  - sensor.shed_temperature
+  - sensor.shed_humidity
+  - sensor.shed_motion
+  - sensor.shed_light
+  - sensor.shed_real_feel
+
+
+  ####Switches
+    #Hallway
+  - switch.printer
+  - switch.media_fan

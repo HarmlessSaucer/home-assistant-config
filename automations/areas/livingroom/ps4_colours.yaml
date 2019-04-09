@@ -1,0 +1,21 @@
+---
+# Wireless Light Switches
+# I have some wireless Sonoff RF light switches.
+# These dont actually connect to mains voltage, instead they are battery powered
+# and just send a simple RF signal to my Sonoff RF Bridge, which then sends an 
+# MQTT message to Home-Assistant.
+
+# Switch 1 - Livingroom 
+alias: PS4 Blue
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: sensor.livingroom_tv_source
+  to: 'PS4 Pro'
+#condition:
+#  condition: state
+#  entity_id: media_player.playstation_4_pro
+#  state: 'idle'
+action:
+  service: scene.turn_on
+  entity_id: scene.ps4_blue

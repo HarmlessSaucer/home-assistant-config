@@ -1,0 +1,7 @@
+# Shed Sensor Node
+# Temperature Real Feel
+platform: mqtt
+state_topic: "shed/sensornode1"
+name: "Shed Real Feel"
+unit_of_measurement: "°F"
+value_template: '{{ value_json.heatIndex | round(1) }}'

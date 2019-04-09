@@ -1,0 +1,8 @@
+# LightwaveRF (Gen 1) Switches
+platform: rfxtrx
+automatic_add: True
+devices:
+  0a14000003f20302000080:
+    name: Media Fan
+  0a14000005f20302010080:
+    name: Printer

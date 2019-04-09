@@ -1,0 +1,7 @@
+---
+name: "Graham's work"
+latitude: !secret zone_graham_work_latitude
+longitude: !secret zone_graham_work_longitude
+radius: 250
+passive: false
+icon: mdi:apple

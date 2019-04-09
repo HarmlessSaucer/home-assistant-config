@@ -1,0 +1,12 @@
+# Livingroom TV Source
+#
+# This sensor checks the status of the webOS TV in the livingroom.
+#
+# Using example:
+# https://community.home-assistant.io/t/using-the-lg-webos-source-value-to-trigger-events/4013/4
+#
+platform: template
+sensors:
+  livingroom_tv_source:
+    value_template: '{{ states.media_player.livingroom_tv.attributes["source"] }}'
+    friendly_name: 'Livingroom TV Source'

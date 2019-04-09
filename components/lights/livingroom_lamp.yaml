@@ -1,0 +1,9 @@
+# Livingroom Lamp
+platform: mqtt
+name: "Livingroom Lamp"
+command_topic: "cmnd/livingroomlamp/power"
+state_topic: "stat/livingroomlamp/POWER"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+retain: true

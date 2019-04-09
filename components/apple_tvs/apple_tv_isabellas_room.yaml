@@ -1,0 +1,9 @@
+---
+# Adds Isabella's Apple TV.
+#
+# https://www.home-assistant.io/components/apple_tv/
+#
+# host: !secret apple_tv_isabellas_room_host
+# login_id: !secret apple_tv_isabellas_room_login_id
+# name: isabellas_room_appletv
+# start_off: true

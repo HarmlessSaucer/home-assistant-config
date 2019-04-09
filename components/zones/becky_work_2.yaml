@@ -1,0 +1,7 @@
+---
+name: Beck's work 2
+latitude: !secret zone_becky_work_2_latitude
+longitude: !secret zone_becky_work_2_longitude
+radius: 250
+passive: false
+icon: mdi:television-box

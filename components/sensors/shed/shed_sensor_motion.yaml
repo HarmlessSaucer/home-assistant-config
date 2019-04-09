@@ -1,0 +1,6 @@
+# Shed Sensor Node
+# Motion
+platform: mqtt  
+state_topic: "shed/sensornode1"  
+name: "Shed Motion"  
+value_template: '{{ value_json.motion }}'  

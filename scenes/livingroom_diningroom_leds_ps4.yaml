@@ -1,0 +1,16 @@
+---
+# This automation turns on the LED strips in the living room and dining room. 
+# It sets them to the Playstation 4 Blue:
+#
+# PS4 Dark Blue
+# Hex: #003791
+# RGB: 0, 55, 145
+#
+name: PS4 Blue
+entities:
+    light.livingroom_tv_cabinet_leds: 
+        state: on
+        rgb_color: [ 0, 55, 145 ]
+    light.diningroom_bookshelf_leds:
+        state: on
+        rgb_color: [0, 55, 145 ]

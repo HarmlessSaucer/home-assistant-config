@@ -1,0 +1,4 @@
+# iTunes (Using itunes-api on Mac mini)
+platform: itunes
+host: !secret media_player_itunes_host
+port: !secret media_player_itunes_port

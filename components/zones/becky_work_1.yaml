@@ -1,0 +1,7 @@
+---
+name: Becky's work 1
+latitude: !secret zone_becky_work_1_latitude
+longitude: !secret zone_becky_work_1_longitude
+radius: 250
+passive: false
+icon: mdi:briefcase

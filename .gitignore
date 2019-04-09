@@ -1,6 +1,5 @@
 # Hass.io .gitignore file
 # A * ensures that everything will be ignored.
-*
 
 # Generic ignores
 *.log
@@ -13,6 +12,7 @@ __pycache__
 # Specific ignores
 .config_entries.json
 .homekit.state
+
 .ios.conf
 .uuid
 core

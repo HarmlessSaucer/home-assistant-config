@@ -1,0 +1,30 @@
+esphome:
+  name: test_leds
+  platform: ESP8266
+  board: nodemcuv2
+
+logger:
+api:
+ota:
+
+wifi:
+  ssid: "secret"
+  password: "secret"
+  fast_connect: true
+
+light:
+  - platform: fastled_clockless
+    chipset: WS2812B
+    pin: D5
+    num_leds: 150
+    rgb_order: GRB
+    id: testLEDs
+    name: "Test LEDs"
+    
+  - platform: partition
+    name: "Test Partition"
+    segments:
+      # Use first LED from the light with ID light1
+      - id: testLEDs
+        from: 0
+        to: 3

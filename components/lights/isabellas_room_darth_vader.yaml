@@ -1,0 +1,29 @@
+platform: mqtt
+schema: json
+name: "Darth Vader"
+state_topic: "bedroom/darthvader"
+command_topic: "bedroom/darthvader/set"
+effect: true
+effect_list:
+  - bpm
+  - candy cane  
+  - confetti  
+  - cyclon rainbow  
+  - dots  
+  - fire  
+  - glitter  
+  - juggle  
+  - lightning
+  - noise  
+  - police all  
+  - police one  
+  - rainbow  
+  - rainbow with glitter  
+  - ripple  
+  - sinelon  
+  - solid  
+  - twinkle  
+brightness: true
+rgb: true
+optimistic: false
+qos: 0

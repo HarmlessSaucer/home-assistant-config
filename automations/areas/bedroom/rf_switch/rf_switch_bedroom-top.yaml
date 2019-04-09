@@ -1,0 +1,19 @@
+---
+# Wireless Light Switches
+# I have some wireless Sonoff RF light switches.
+# These dont actually connect to mains voltage, instead they are battery powered
+# and just send a simple RF signal to my Sonoff RF Bridge, which then sends an 
+# MQTT message to Home-Assistant.
+
+# Switch 2 - Bedroom
+alias: Switch 2 - Top Button
+initial_state: 'on'
+trigger:
+  platform: mqtt
+  topic: "tele/sonoffrf/RESULT"
+condition:
+  condition: template
+  value_template: '{{ trigger.payload_json.RfReceived.Data == "2DDF84" }}'
+action:
+  - service: light.turn_on
+    entity_id: light.bedroom_light

@@ -1,0 +1,4 @@
+rfxtrx:
+  device: !secret rfxtrx_device
+  debug: True
+  dummy: False

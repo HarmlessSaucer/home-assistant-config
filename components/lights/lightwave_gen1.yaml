@@ -1,0 +1,11 @@
+platform: rfxtrx
+automatic_add: True
+devices:
+  0a14000101f20302010080:
+    name: Dining Room Light
+  0a14000000f20302010080:
+    name: Livingroom Light
+  0a14000202f20302010080:
+    name: Bedroom Light
+  0a14000104f20302010080:
+    name: "Isabella's Light"

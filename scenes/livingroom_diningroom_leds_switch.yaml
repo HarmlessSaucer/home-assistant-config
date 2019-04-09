@@ -1,0 +1,27 @@
+---
+# This automation turns on the LED strips in the living room and dining room. 
+# It sets them to the Nintendo Switch colours:
+#
+# Nintendo Switch JoyCon colours:
+# Left JoyCon (Blue):
+# Hex: #00c3e3
+# RGB: 0, 195, 227
+#
+# Right JoyCon (Red):
+# Hex: #ff4554
+# RGB: 255, 69, 84
+#
+name: Nintendo Switch colours
+entities:
+    light.tv_cabinet_leds_left: 
+        state: on
+        rgb_color: [ 0, 195, 227 ]
+    light.tv_cabinet_leds_right:
+        state: on
+        rgb_color: [ 255, 69, 84 ]
+    light.left_bookshelf:
+        state: on
+        rgb_color: [ 0, 195, 227 ]
+    light.right_bookshelf:
+        state: on
+        rgb_color: [ 255, 69, 84 ]

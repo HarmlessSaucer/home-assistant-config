@@ -1,0 +1,38 @@
+esphome:
+  name: diningroom_bookshelf_leds
+  platform: ESP8266
+  board: nodemcuv2
+
+logger:
+api:
+ota:
+
+wifi:
+  ssid: "secret"
+  password: "secret"
+  fast_connect: true
+  
+light:
+  - platform: partition
+    name: "Left Bookshelf"
+    segments:
+      # Use first LED from the light with ID light1
+      - id: bookshelfLEDs
+        from: 0
+        to: 19
+  
+  - platform: partition
+    name: "Right Bookshelf"
+    segments:
+      # Use 10 leds from light with ID light2 starting 2nd LED
+      - id: bookshelfLEDs
+        from: 20
+        to: 46
+  
+  - platform: fastled_clockless
+    chipset: WS2811
+    pin: D5
+    num_leds: 46
+    rgb_order: BRG
+    name: "Diningroom Bookshelf LEDs"
+    id: bookshelfLEDs

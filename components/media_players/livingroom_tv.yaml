@@ -1,0 +1,30 @@
+# webOS TV
+platform: webostv
+host: !secret media_player_webostv_ipaddress
+name: Livingroom TV  
+timeout: 5
+filename: webostv.conf
+customize:  
+  sources:
+      - Apple TV 4K
+      - PS4 Pro
+      - Surround Sound
+      - LiveTV
+      - TV Guide
+      - BBC iPlayer
+      - All 4
+      - Amazon Prime Video
+      - ITV Hub
+      - UKTV Play
+      - Plex
+      - YouTube
+      - AV
+      - Component
+      - Multi-view
+      - Notifications
+      - Music
+      - Screen Share
+turn_on_action:
+  service: wake_on_lan.send_magic_packet
+  data:
+    mac: !secret media_player_webostv_macaddress

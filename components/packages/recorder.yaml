@@ -1,0 +1,10 @@
+#recorder:
+recorder:
+  purge_keep_days: 7
+  purge_interval: 1
+  include:
+    domains:
+      - sensor
+      - light
+      - switch
+      - media_player

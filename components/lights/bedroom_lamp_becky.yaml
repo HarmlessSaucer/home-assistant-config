@@ -1,0 +1,9 @@
+# Bedroom Lamp - Becky
+platform: mqtt
+name: "Bedroom Lamp - Becky"
+command_topic: "cmnd/bedroomlampbecky/power"
+state_topic: "stat/bedroomlampbecky/POWER"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+retain: true

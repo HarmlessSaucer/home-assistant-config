@@ -1,0 +1,7 @@
+# Shed Sensor Node
+# Temperature
+platform: mqtt  
+state_topic: "shed/sensornode1"  
+name: "Shed Temperature"  
+unit_of_measurement: "°F"  
+value_template: '{{ value_json.temperature | round(1) }}'  
