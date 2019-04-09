@@ -12,7 +12,6 @@ __pycache__
 # Specific ignores
 .config_entries.json
 .homekit.state
-
 .ios.conf
 .uuid
 core
@@ -38,6 +37,7 @@ ip_bans.yaml
 
 # Ensure all the wonky macOS-ruined things are ignored
 ._*
+.DS_Store
 
 # ESPHome ignores
 esphome/secrets.yaml
