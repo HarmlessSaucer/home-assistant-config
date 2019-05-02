@@ -1,0 +1,8 @@
+# Uptime
+#
+# Displays the current system uptime in days.
+# Useful for future automations/scheduled restarts etc.
+#
+platform: uptime
+name: System Uptime
+unit_of_measurement: days

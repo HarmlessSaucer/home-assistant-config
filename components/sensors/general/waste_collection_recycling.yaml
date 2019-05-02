@@ -1,0 +1,10 @@
+# Waste Collection
+#
+# Scraped from the council website.
+#
+platform: scrape
+resource: !secret council_url
+name: Recycling
+scan_interval: 43200
+select: "div.atPanelContent.atAlt1"
+value_template: "{{ value.split(':')[1]|replace('View Calendar', ' ')|trim }}"

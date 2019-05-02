@@ -1,0 +1,10 @@
+# Waste Collection
+#
+# Scraped from the council website.
+#
+platform: scrape
+resource: !secret council_url
+name: Garden Waste
+scan_interval: 43200
+select: "div.atPanelContent.atAlt0.atLast"
+value_template: "{{ value.split(':')[1]|replace('View Calender', ' ')|trim }}"

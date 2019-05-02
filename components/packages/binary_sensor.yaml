@@ -1,0 +1,6 @@
+---
+# This handles the loading of my binary sensors
+#
+# https://www.home-assistant.io/components/binary_sensor/
+#
+automation: !include_dir_list ../../binary_sensors

@@ -1,0 +1,9 @@
+# Time and Date
+#  Workdays
+#
+# This sensor is used to determine if the current day is a workday.
+# This can then be used in automations and scheduling.
+#
+platform: workday
+country: UK
+workdays: [mon, tue, wed, thu, fri]

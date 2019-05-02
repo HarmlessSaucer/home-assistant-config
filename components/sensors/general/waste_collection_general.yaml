@@ -1,0 +1,10 @@
+# Waste Collection
+#
+# Scraped from the council website.
+#
+platform: scrape
+resource: !secret council_url
+name: General Waste
+scan_interval: 43200
+select: "div.atPanelContent.atFirst.atAlt0"
+value_template: "{{ value.split(':')[1]|replace('View Calendar', ' ')|trim }}"
