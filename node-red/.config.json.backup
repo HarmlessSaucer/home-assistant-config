@@ -2,7 +2,7 @@
  "nodes": {
   "node-red": {
    "name": "node-red",
-   "version": "0.20.2",
+   "version": "0.20.3",
    "local": false,
    "nodes": {
     "inject": {

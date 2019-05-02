@@ -1,7 +1,0 @@
-# Bedroom Sensor Node
-# Humidity
-platform: mqtt  
-state_topic: "bedroom/sensornode1"  
-name: "Bedroom Humidity"  
-unit_of_measurement: "%"  
-value_template: '{{ value_json.humidity | round(1) }}'  

@@ -1,6 +1,0 @@
-# Isabella's Room Sensor Node
-# Motion
-platform: mqtt  
-state_topic: "isabellasroom/sensornode1"  
-name: "Isabella's Room Motion"  
-value_template: '{{ value_json.motion }}'  

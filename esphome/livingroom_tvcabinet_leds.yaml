@@ -8,26 +8,32 @@ api:
 ota:
 
 wifi:
-  ssid: "secret"
-  password: "secret"
+  ssid: !secret esphome_wifi_ssid
+  password: !secret esphome_wifi_password
   fast_connect: true
   
 light:
   - platform: fastled_clockless
-    chipset: WS2812
+    chipset: WS2811
     pin: D5
-    num_leds: 64
+    num_leds: 77
     rgb_order: BRG
-    name: "Livingroom TV Cabinet LEDs"
+    name: "TV and TV Cabinet LEDs"
     id: livingroomtvcabinetLEDs
     effects:
       - random:
       - strobe:
     
   - platform: partition
+    name: "TV Cabinet LEDs"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 0
+        to: 20
+  
+  - platform: partition
     name: "TV Cabinet LEDs - Left"
     segments:
-      # Use first LED from the light with ID light1
       - id: livingroomtvcabinetLEDs
         from: 0
         to: 11
@@ -35,7 +41,49 @@ light:
   - platform: partition
     name: "TV Cabinet LEDs - Right"
     segments:
-      # Use first LED from the light with ID light1
       - id: livingroomtvcabinetLEDs
         from: 12
-        to: 63
+        to: 20
+        
+  - platform: partition
+    name: "TV LEDs"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 21
+        to: 77
+  
+  # **** LEDs behind the TV ****
+  - platform: partition
+    name: "TV LEDs - Bottom Right"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 21
+        to: 29
+        
+  - platform: partition
+    name: "TV LEDs - Right"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 30
+        to: 39
+        
+  - platform: partition
+    name: "TV LEDs - Top"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 40
+        to: 57
+        
+  - platform: partition
+    name: "TV LEDs - Left"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 58
+        to: 67
+        
+  - platform: partition
+    name: "TV LEDs - Bottom Left"
+    segments:
+      - id: livingroomtvcabinetLEDs
+        from: 68
+        to: 77

@@ -20,23 +20,21 @@ include_entities:
   - light.dining_room_light
   
     #Isabellas Room
-  - light.isabella_s_light
+  - light.isabellas_bedroom_light
 
 
   ####Sensors
     #Bedroom
   - sensor.bedroom_temperature
   - sensor.bedroom_humidity
-  - sensor.bedroom_motion
-  - sensor.bedroom_light
-  - sensor.bedroom_real_feel
 
     #Isabellas Room
-  - sensor.isabella_s_room_temperature
-  - sensor.isabella_s_room_humidity
-  - sensor.isabella_s_room_motion
-  - sensor.isabella_s_room_light
-  - sensor.isabella_s_room_real_feel
+  - sensor.isabellas_bedroom_temperature
+  - sensor.isabellas_bedroom_humidity
+
+    #Livingroom
+  - sensor.livingroom_temperature
+  - sensor.livingroom_humidity
 
     #Shed
   - sensor.shed_temperature

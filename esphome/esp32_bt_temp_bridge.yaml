@@ -1,0 +1,59 @@
+esphome:
+  name: esp32_bt_temp_bridge
+  platform: ESP32
+  board: esp-wrover-kit
+
+wifi:
+  ssid: !secret esphome_wifi_ssid
+  password: !secret esphome_wifi_password
+  fast_connect: true
+
+# Enable logging/HomeAssistant API/OTA Updates
+logger:
+api:
+ota:
+
+# Xiaom Miijia
+esp32_ble_tracker:
+
+# Sensors
+sensor:
+  # Livingroom
+  - platform: xiaomi_mijia
+    mac_address: 58:2D:34:31:95:DD
+    temperature:
+      name: "Livingroom Temperature"
+    humidity:
+      name: "Livingroom Humidity"
+    battery_level:
+      name: "Livingroom Battery Level"
+
+  # Bedroom
+  - platform: xiaomi_mijia
+    mac_address: 58:2D:34:31:94:8D
+    temperature:
+      name: "Bedroom Temperature"
+    humidity:
+      name: "Bedroom Humidity"
+    battery_level:
+      name: "Bedroom Battery Level"
+
+  # Isabellas Bedroom
+  - platform: xiaomi_mijia
+    mac_address: 58:2D:34:31:A9:2F
+    temperature:
+      name: "Isabellas Bedroom Temperature"
+    humidity:
+      name: "Isabellas Bedroom Humidity"
+    battery_level:
+      name: "Isabellas Bedroom Battery Level"
+
+  # Spare
+  - platform: xiaomi_mijia
+    mac_address: 58:2D:34:31:94:E5
+    temperature:
+      name: "Conservatory Temperature"
+    humidity:
+      name: "Conservatory Humidity"
+    battery_level:
+      name: "Conservatory Battery Level"

@@ -8,8 +8,8 @@ api:
 ota:
 
 wifi:
-  ssid: "secret"
-  password: "secret"
+  ssid: !secret esphome_wifi_ssid
+  password: !secret esphome_wifi_password
   fast_connect: true
   
 light:
