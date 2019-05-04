@@ -8,7 +8,7 @@ alias: Turn on LEDs with TV
 trigger:
   platform: state
   entity_id: media_player.livingroom_tv
-  to: 'playing'
+  to: 'off'
 action:
   - service: light.turn_off
     data:
