@@ -48,3 +48,8 @@ include_entities:
     #Hallway
   - switch.printer
   - switch.media_fan
+  
+  
+  ####Binary Sensors
+    #Hallway
+  - binary_sensor.front_door
