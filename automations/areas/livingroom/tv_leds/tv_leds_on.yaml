@@ -1,0 +1,16 @@
+---
+# TV LEDs
+# I have a long LED strip behind my TV and under my TV cabinet.
+# These are controlled by ESPHome.
+
+# Turn on the Living Room TV LEDs when the TV comes on
+alias: Turn on LEDs with TV
+trigger:
+  platform: state
+  entity_id: media_player.livingroom_tv
+  to: 'playing'
+action:
+  - service: light.turn_on
+    data:
+      entity_id: 
+      - light.tv_and_tv_cabinet_leds
