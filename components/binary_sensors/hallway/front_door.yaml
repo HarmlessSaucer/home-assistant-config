@@ -9,14 +9,13 @@
 #
 # I beleive this sensor also sends a code for battery-low, 
 # but I haven't been able to test this yet!
-
 platform: mqtt
-name: "Front Door"
+name: Front Door
 state_topic: "tele/sonoffrf/RESULT"
 value_template: '{{value_json.RfReceived.Data}}'
 payload_on: "2D860A"
 payload_off: "2D860A"
 device_class: Door
-#optimistic: false
 qos: 1
 #retain: false
+#optimistic: false

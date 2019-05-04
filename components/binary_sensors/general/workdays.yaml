@@ -5,5 +5,11 @@
 # This can then be used in automations and scheduling.
 #
 platform: workday
+name: workday
 country: UK
-workdays: [mon, tue, wed, thu, fri]
+workdays:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
