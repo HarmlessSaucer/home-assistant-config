@@ -1,0 +1,17 @@
+---
+# My PS4 is in a closed cabinet, with a Media Fan to cool it.
+# Turn on the fan when using the PS4
+#
+# Right now I am basing this off of the source the TV is on.
+# This isn't perfect, because I COULD have left the PS4 on and switched sources.
+# Then it could cook itself in the cupboard! 
+# In the future, I will look to change this to the PS4 media_player component instead.
+
+alias: Turn off Fan when the PS4 turns off
+trigger:
+  platform: state
+  entity_id: sensor.livingroom_tv_source
+  from: 'PS4 Pro'
+action:
+  - service: switch.turn_off
+    entity_id: switch.media_fan
