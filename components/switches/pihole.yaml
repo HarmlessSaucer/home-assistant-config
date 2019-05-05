@@ -1,0 +1,8 @@
+platform: command_line
+switches:
+  pihole_switch:
+    friendly_name: Pi Hole Blocking
+    command_on: !secret pihole_on
+    command_off: !secret pihole_off
+    command_state: !secret pihole_status
+    value_template: "{{ value_json.status == 'enabled' }}"

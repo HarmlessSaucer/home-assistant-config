@@ -1,0 +1,8 @@
+platform: command_line
+switches:
+  lullaby_bedtime_routine_switch:
+    friendly_name: Lullaby Bedtime Routine
+    command_on: !secret lullaby_on
+    command_off: !secret lullaby_off
+    command_state: !secret lullaby_status
+    value_template: "{{ value_json.status == 'play' }}"
