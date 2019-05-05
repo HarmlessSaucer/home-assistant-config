@@ -1,0 +1,18 @@
+# Lullaby
+#
+# This is an old bluetooth speaker I bought a long time ago for about £10
+# It was just to have in the kitchen and when working round the house.
+# It wasnt great, and when it's battery died, I kept it for parts.
+# 
+# Since then, I have taken out the board and battery from inside, and installed
+# a Raspberry Pi Zero W and Adafruit mono audio amplifier, and installed 
+# Volumio on the Pi.
+# 
+# The idea behind this is I can load it with kids songs (at the moment lullabys
+# and white noise!) for our daughter Isabella, to help her sleep.  We keep it 
+# near her bed, and can control it wirelessly using our phones or tablets.
+#
+platform: volumio
+name: Lullaby
+host: !secret media_player_lullaby_volumio_host
+port: !secret media_player_lullaby_volumio_port

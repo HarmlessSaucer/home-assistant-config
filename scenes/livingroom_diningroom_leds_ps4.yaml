@@ -8,7 +8,7 @@
 #
 name: PS4 Blue
 entities:
-    light.livingroom_tv_cabinet_leds: 
+    light.tv_and_tv_cabinet_leds: 
         state: on
         rgb_color: [ 0, 55, 145 ]
     light.diningroom_bookshelf_leds:
