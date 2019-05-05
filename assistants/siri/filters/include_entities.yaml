@@ -31,6 +31,7 @@ include_entities:
     #Isabellas Room
   - sensor.isabellas_bedroom_temperature
   - sensor.isabellas_bedroom_humidity
+  - switch.lullaby_bedtime_routine_switch
 
     #Livingroom
   - sensor.livingroom_temperature
