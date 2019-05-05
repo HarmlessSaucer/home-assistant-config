@@ -1,0 +1,17 @@
+---
+# This is an input boolean to use as a dummy switch in HomeKit
+# This is exposed to HomeKit, so that devices that are not yet 
+# Home-Assistant compatible can be used.
+#
+# Process:
+#  - Expose this switch to HomeKit
+#  - Create automations that turn this on/off when the HomeKit
+#   Switch when the real switch is turned on/off in the HomeKit
+#   application.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+homekit_dummy_kitchen_light:
+    name: HomeKit Dummy Kitchen Light
+    initial: off
+    icon: mdi:lightbulb
