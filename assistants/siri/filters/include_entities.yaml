@@ -31,7 +31,6 @@ include_entities:
     #Isabellas Room
   - sensor.isabellas_bedroom_temperature
   - sensor.isabellas_bedroom_humidity
-  - switch.lullaby_bedtime_routine_switch
 
     #Livingroom
   - sensor.livingroom_temperature
@@ -54,3 +53,8 @@ include_entities:
   ####Binary Sensors
     #Hallway
   - binary_sensor.front_door
+  
+  
+  ####Command_Line Switches
+  - switch.lullaby_bedtime_routine_switch
+  - switch.pihole_switch
