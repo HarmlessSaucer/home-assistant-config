@@ -12,6 +12,15 @@
 # and white noise!) for our daughter Isabella, to help her sleep.  We keep it 
 # near her bed, and can control it wirelessly using our phones or tablets.
 #
+# I have loaded this player with specific MP3s and created a playlist in the 
+# interface. I then created a command_line switch to start this playlist when
+# the switch is activated, and pause it when it is deactivated.  The switch will
+# check the status of the player and reflect this in the switch status.
+# This is all using the Volumio REST API.  
+#
+# You can find the command line switch in:
+# ../switches/lullaby.yaml
+#
 platform: volumio
 name: Lullaby
 host: !secret media_player_lullaby_volumio_host
